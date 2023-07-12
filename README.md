@@ -1,6 +1,6 @@
 # dumpthread
 
-Command line tool to save a [Nostr](https://github.com/fiatjaf/nostr) thread on local filesystem, including all the associated events (replies, reactions, zaps, boosts).
+Command line tool to save a [nostr](https://github.com/fiatjaf/nostr) thread on local filesystem, including all the associated events (replies, reactions, zaps, boosts).
 
 Every event will be saved in a separated json file using its ID as the file name.
 

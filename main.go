@@ -19,6 +19,7 @@ func main() {
 	app := &cli.App{
 		Suggest: true,
 		Name:    "dumpthread",
+		Usage:   "save a nostr thread to local filesystem",
 		Commands: []*cli.Command{
 			{
 				Name:    "save",
@@ -37,19 +38,19 @@ func main() {
 					&cli.StringFlag{
 						Name:    "outdir",
 						Aliases: []string{"o"},
-						Usage:   "The path where to save the json events",
+						Usage:   "the path where save the json events to",
 						Value:   ".",
 					},
 					&cli.StringFlag{
 						Name:     "eventid",
 						Aliases:  []string{"e"},
-						Usage:    "The eventID of the first event of the thread",
+						Usage:    "the event ID of the first event of the thread",
 						Required: true,
 					},
 					&cli.StringSliceFlag{
 						Name:     "relay",
 						Aliases:  []string{"r"},
-						Usage:    "A relays to use (can be use multiple times)",
+						Usage:    "the relays to use (can be use multiple times)",
 						Required: true,
 					},
 				},
